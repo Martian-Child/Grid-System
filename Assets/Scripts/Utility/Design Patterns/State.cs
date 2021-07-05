@@ -6,7 +6,6 @@
     /// </summary>
     public abstract class State
     {
-        // Reference to our state machine.
         public StateMachine owner;
         
         /// <summary>
