@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="a3ae6350-bc87-4f4f-a192-45cb5e8361d6" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/Pathfinding/Scripts/Pathfinding.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Utility/Unity Extensions/VectorExtensions.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Utility/Grid System/SnapToGrid.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/19391519-2608-4240-8FF9-93819E8AFDF3/21/05359ff4/Physics.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Utility/Grid System/GridObject.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Utility/Grid System/GridVisualizer.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Utility/Serialization/Editor/SerializableDictionaryPropertyDrawer.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Utility/Grid System/GridsManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Utility/Grid System/Node.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Utility/Serialization/SerializableHashSet.cs" root0="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <changedPaths>
+      <option value="$PROJECT_DIR$/Assets/Scripts/Utility/GenericGrid.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Utility/Grid2D.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Utility/Grid System/GenericGrid.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Utility/Grid System/Grid3D.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Utility/Grid System/Grid2D.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Utility/Grid System/GridImplemenation.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Utility/Editor/SnapToGridEditor.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Testing/AStarTest.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Core/Grid/Pathfinding/PathFinder.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Utility/Grid System/GridHandler.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Utility/Grid System/GridContainer.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Utility/Grid System/Grid1.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Utility/Grid System/IGridObj.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Utility/Misc/CastList.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Core/Grid/Nodes/PathNode.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Utility/Grid System/GridManager.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Utility/Serialization/SerializableDict.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Utility/Serialization/Editor/SerializableDictionaryPropertyDrawer.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Utility/Serialization/SerializableHashSet.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Core/Grid/AStarMartianGrid.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Utility/Grid System/GridObj.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Utility/Design Patterns/Singleton.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Core/Grid/Nodes/Node.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Utility/Grid System/GridsVisualizer.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Utility/Grid System/MartianGrid.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Utility/Grid System/GridsController.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Core/Grid/AStarManager.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Core/Grid/PathManager.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Core/Grid/GridManager.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Core/Grid/AStarGrid.cs" />
+      <option value="$PROJECT_DIR$/Assets/AStarVisualizer.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Core/Grid/Pathfinding/PathManager.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Utility/Grid System/GridsHandler.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Utility/Grid System/GridsManager.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Utility/Grid System/SnapToGrid.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Utility/Grid System/Node.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Utility/Grid System/Pathfinding/PathNode.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Utility/Grid System/Pathfinding/PathFinder.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Utility/Grid System/GridObject.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Utility/Unity Extensions/VectorExtensions.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Utility/Grid System/Pathfinding/PathManager.cs" />
+      <option value="$PROJECT_DIR$/Assets/PathVisualizer.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Utility/Grid System/Grid.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Utility/Grid System/GridVisualizer.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Utility/Grid System/Pathfinding/AStarGrid.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Utility/Unity Extensions/LayerMaskExtensions.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Utility/Mouse/MouseRaycaster.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Utility/Physics/Raycaster.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Utility/Mouse/MouseCaster.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Utility/Grid System/Pathfinding/Pathfinder.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Utility/Time/TimersManager.cs" />
+    </changedPaths>
+  </component>
+  <component name="ProjectId" id="1qe2SDceiUU4V9QZzgcUzJAHHRN" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DebuggerViewTab_PTCS_FirstProportionKey" value="0.32964224" />
+    <property name="DebuggerViewTab_PTCS_LastProportionKey" value="0.0" />
+    <property name="Discover.Launch.Via.Unity" value="true" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="XThreadsFramesViewSplitterKey" value="0.17884131" />
+    <property name="settings.editor.selected.configurable" value="configurable.group.editor" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
+    <configuration name="Attach to Unity Editor &amp; Play" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="UNITY_ATTACH_AND_PLAY" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
+      <option name="allowRunningInParallel" value="false" />
+      <option name="listenPortForConnections" value="false" />
+      <option name="pid" />
+      <option name="projectPathOnTarget" />
+      <option name="selectedOptions">
+        <list />
+      </option>
+      <method v="2" />
+    </configuration>
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
+      <option name="allowRunningInParallel" value="false" />
+      <option name="listenPortForConnections" value="false" />
+      <option name="pid" />
+      <option name="projectPathOnTarget" />
+      <option name="selectedOptions">
+        <list />
+      </option>
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="a3ae6350-bc87-4f4f-a192-45cb5e8361d6" name="Default Changelist" comment="" />
+      <created>1617425736230</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1617425736230</updated>
+      <workItem from="1617425748984" duration="5000" />
+      <workItem from="1617426056465" duration="1376000" />
+      <workItem from="1619469380825" duration="1777000" />
+      <workItem from="1619471250799" duration="26106000" />
+      <workItem from="1619628183074" duration="529000" />
+      <workItem from="1619628971335" duration="26314000" />
+      <workItem from="1619710013950" duration="2665000" />
+      <workItem from="1619712712893" duration="52000" />
+      <workItem from="1619712790148" duration="105000" />
+      <workItem from="1619713121145" duration="5091000" />
+      <workItem from="1620174324843" duration="55144000" />
+      <workItem from="1620401967603" duration="6279000" />
+      <workItem from="1620677985733" duration="4438000" />
+      <workItem from="1620682505865" duration="4953000" />
+      <workItem from="1621282393110" duration="13267000" />
+      <workItem from="1621366600577" duration="8846000" />
+      <workItem from="1623685083979" duration="4158000" />
+      <workItem from="1623690165078" duration="1959000" />
+      <workItem from="1623760274279" duration="11104000" />
+      <workItem from="1625189480909" duration="1073000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="UnityProjectConfiguration" hasMinimizedUI="true" />
+  <component name="UnityUnitTestConfiguration" currentTestLauncher="EditMode" />
+  <component name="VcsManagerConfiguration">
+    <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+  </component>
+  <component name="XDebuggerManager">
+    <pin-to-top-manager>
+      <pinned-members>
+        <PinnedItemInfo parentTag="Type#MartianChild.Utility.Node" memberName="Position" />
+      </pinned-members>
+    </pin-to-top-manager>
+  </component>
+</project>
