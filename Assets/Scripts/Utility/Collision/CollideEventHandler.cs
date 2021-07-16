@@ -43,8 +43,8 @@ namespace MartianChild.Utility.Collision
     }
 
     /// <summary>
-    /// Events for collisions, the first gameobject is the gameobject that triggered the event,
-    /// the second is the gameobject that collided with the one that triggers the event
+    /// Events for collisions, the first gameobject is the gameobject that this monobehavior is attached to,
+    /// the second is the gameobject that collided with the the one this is attached to.
     /// </summary>
     [System.Serializable]
     public class CollisionEvent : UnityEvent<GameObject, GameObject> { }
