@@ -5,7 +5,7 @@ using UnityEngine;
 
 namespace MartianChild.Utility.Time
 {
-    public class TimersManager : Singleton<MonoBehaviour>
+    public class TimersManager : Singleton<TimersManager>
     {
         /// <summary>
         /// Stores timers by guid.
