@@ -3,7 +3,7 @@ using UnityEngine;
 
 namespace MartianChild.Utility.Mouse
 {
-    public class MouseCaster : MonoBehaviour
+    public static class MouseCaster
     {
         /// <summary>
         /// <para> Shoots a ray from mouse to world and returns the hit. </para>

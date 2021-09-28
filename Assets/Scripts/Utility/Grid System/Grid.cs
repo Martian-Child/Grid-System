@@ -17,18 +17,15 @@ namespace MartianChild.Utility.Grid_System
         [SerializeField] [Min(1)]
         protected float cellSize = 1f;
         protected Vector2 scale = Vector2.one;
-        protected Vector3 position = Vector3.zero;
         
         public Vector2 Scale => scale;
-        public Vector3 Position => position;
         public float CellSize => cellSize;
         
         protected GridObject[,] gridObjs;
-
-        protected virtual void Initialize()
+        
+        protected void Initialize()
         {
             scale = new Vector2(transform.localScale.x, transform.localScale.y);
-            position = transform.position;
             gridObjs = new GridObject[(int)scale.x, (int)scale.y];
         }
         
@@ -62,8 +59,8 @@ namespace MartianChild.Utility.Grid_System
         
         public Vector3 WorldPosFromGridPos(int x, int y)
         {
-            Vector3 worldPos = new Vector3(x - scale.x/2 + cellSize/2, y - scale.y/2 + cellSize/2) * cellSize + position;
-            worldPos.RotateAroundPivot(position, transform.rotation.eulerAngles);
+            Vector3 worldPos = new Vector3(x, y) * cellSize + transform.position;
+            worldPos.RotateAroundPivot(transform.position, transform.rotation.eulerAngles);
             return worldPos;
         }
         
@@ -74,8 +71,22 @@ namespace MartianChild.Utility.Grid_System
 
         public void GridPosFromWorldPos(Vector3 worldPosition, out int x, out int y)
         {
-            x = Mathf.FloorToInt(((worldPosition - position).x - (float)scale.x/2 - cellSize/2) / cellSize);
-            y = Mathf.FloorToInt(((worldPosition - position).y - (float)scale.y/2 - cellSize/2) / cellSize);
+            if (transform.rotation.eulerAngles.x == 0)
+            {
+                x = Mathf.FloorToInt(worldPosition.x / cellSize);
+                y = Mathf.FloorToInt(worldPosition.y / cellSize);
+            }
+            else
+            {
+                x = Mathf.FloorToInt(worldPosition.x / cellSize);
+                y = Mathf.FloorToInt(worldPosition.z / cellSize);
+            }
+        }
+
+        public Vector2 GridPosFromWorldPos(Vector3 worldPosition)
+        {
+            GridPosFromWorldPos(worldPosition, out int x, out int y);
+            return new Vector2(x, y);
         }
 
         public void SetGridObject(int x, int y, GridObject value)

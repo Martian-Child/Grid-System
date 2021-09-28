@@ -1,4 +1,6 @@
 using MartianChild.Utility.Unity_Extensions;
+using MyBox;
+using UnityEditor;
 using UnityEngine;
 
 namespace MartianChild.Utility.Grid_System
@@ -17,7 +19,7 @@ namespace MartianChild.Utility.Grid_System
         public Color boundsColor = Color.white;
         
         
-        private void Update()
+        private void LateUpdate()
         {
             if (transform.hasChanged) UpdateGrid();
         }
@@ -46,10 +48,22 @@ namespace MartianChild.Utility.Grid_System
             
             // draw the cells
             foreach (GridObject gridObj in grid.GetGridObjects())
-            {  
-                Gizmos.DrawWireCube(
-                    grid.WorldPosFromGridPos(gridObj.GetGridPosition()), 
-                    new Vector3(1, 0, 1) * grid.CellSize);
+            {
+                if (grid.transform.rotation.eulerAngles.x != 0)
+                {
+                     Gizmos.DrawWireCube(
+                        grid.WorldPosFromGridPos(gridObj.GetGridPosition()), 
+                        new Vector3(1, 0, 1) * grid.CellSize);
+                }
+                else
+                {
+                    Gizmos.DrawWireCube(
+                        grid.WorldPosFromGridPos(gridObj.GetGridPosition()), 
+                        new Vector3(1, 1, 0) * grid.CellSize);
+                }
+                
+                Handles.Label(grid.WorldPosFromGridPos(gridObj.GetGridPosition()) - new Vector3(grid.CellSize - 0.1f, 0, grid.CellSize - 0.4f)/2, "" + gridObj.GetGridPosition());
+               
             }
         }
         
@@ -60,10 +74,13 @@ namespace MartianChild.Utility.Grid_System
             Gizmos.color = boundsColor;
             
             // draw the bounds
-            Vector3 gridScale = grid.transform.localScale;
-            gridScale.RotateAroundPivot(grid.transform.position, grid.transform.rotation.eulerAngles);
+            //gridScale.RotateAroundPivot(grid.transform.position, grid.transform.rotation.eulerAngles);
             
-            Gizmos.DrawWireCube(grid.transform.position, gridScale);
+            if (grid.transform.rotation.eulerAngles.x == 0)
+                Gizmos.DrawWireCube(grid.transform.position, grid.transform.localScale * grid.CellSize);
+            else 
+                Gizmos.DrawWireCube(grid.transform.position, new Vector3(grid.Scale.x, grid.transform.localScale.z, grid.Scale.y) * grid.CellSize);
+                
             
         }
     }

@@ -2,11 +2,33 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="edb66e62-102c-465f-9b93-947bee3e737e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Utility/Design Patterns/State.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Utility/Design Patterns/State.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Utility/Design Patterns/StateMachine.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Utility/Design Patterns/StateMachine.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Pathfinding.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Grid-System/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Grid-System/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Testing Grounds.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Testing Grounds.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Testing/AStarTest.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Testing/AStarTest.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Utility/Grid System/Grid.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Utility/Grid System/Grid.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Utility/Grid System/GridVisualizer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Utility/Grid System/GridVisualizer.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Utility/Grid System/Pathfinding/AStarGrid.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Utility/Grid System/Pathfinding/AStarGrid.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Utility/Grid System/Pathfinding/PathManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Utility/Grid System/Pathfinding/PathManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Utility/Grid System/Pathfinding/PathNode.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Utility/Grid System/Pathfinding/PathNode.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Utility/Grid System/Pathfinding/PathVisualizer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Utility/Grid System/Pathfinding/AStarVisualizer.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Utility/Grid System/Pathfinding/PathVisualizer.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Utility/Grid System/Pathfinding/AStarVisualizer.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Utility/Grid System/SnapToGrid.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Utility/Grid System/SnapToGrid.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Utility/Mouse/MouseCaster.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Utility/Mouse/MouseCaster.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Utility/Time/Timer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Utility/Time/Timer.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Logs/ApiUpdaterCheck.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/ApiUpdaterCheck.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Logs/AssetImportWorker0-prev.log" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/AssetImportWorker0-prev.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Logs/shadercompiler-UnityShaderCompiler.exe0.log" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/shadercompiler-UnityShaderCompiler.exe0.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Logs/shadercompiler-UnityShaderCompiler.exe1.log" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/shadercompiler-UnityShaderCompiler.exe1.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Logs/shadercompiler-UnityShaderCompiler.exe10.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Logs/shadercompiler-UnityShaderCompiler.exe11.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Logs/shadercompiler-UnityShaderCompiler.exe2.log" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/shadercompiler-UnityShaderCompiler.exe2.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Logs/shadercompiler-UnityShaderCompiler.exe3.log" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/shadercompiler-UnityShaderCompiler.exe3.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Logs/shadercompiler-UnityShaderCompiler.exe4.log" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/shadercompiler-UnityShaderCompiler.exe4.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Logs/shadercompiler-UnityShaderCompiler.exe5.log" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/shadercompiler-UnityShaderCompiler.exe5.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Logs/shadercompiler-UnityShaderCompiler.exe6.log" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/shadercompiler-UnityShaderCompiler.exe6.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Logs/shadercompiler-UnityShaderCompiler.exe7.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Logs/shadercompiler-UnityShaderCompiler.exe8.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Logs/shadercompiler-UnityShaderCompiler.exe9.log" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,6 +40,7 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Utility/Design Patterns/CommandInvoker.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.collab-proxy@1.5.7/Editor/Collaborate/UserInterface/CollaborateWindow.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <changedPaths>
@@ -25,8 +48,19 @@
       <option value="$PROJECT_DIR$/Assets/Scripts/Utility/Design Patterns/CommandInvoker.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Utility/Time/Timer.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Utility/Time/TimersManager.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Utility/Design Patterns/State.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Utility/Design Patterns/StateMachine.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Utility/Design Patterns/State.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Utility/Grid System/Pathfinding/AStarGrid.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Utility/Grid System/SnapToGrid.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Utility/Grid System/Pathfinding/PathVisualizer.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Utility/Mouse/MouseCaster.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Utility/Grid System/Pathfinding/PathManager.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Utility/Grid System/Pathfinding/AStarVisualizer.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Utility/Grid System/Pathfinding/PathNode.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Utility/Grid System/GridVisualizer.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Utility/Grid System/Grid.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Testing/AStarTest.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Utility/Grid System/Pathfinding/Pathfinder.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1utfDUVhdUJGcpjUaRJaTNpPA7s" />
@@ -73,7 +107,8 @@
       <option name="presentableId" value="Default" />
       <updated>1625489689180</updated>
       <workItem from="1625489697516" duration="1000" />
-      <workItem from="1625490122342" duration="823000" />
+      <workItem from="1625490122342" duration="1210000" />
+      <workItem from="1628523447826" duration="13587000" />
     </task>
     <servers />
   </component>
@@ -92,6 +127,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />

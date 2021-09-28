@@ -7,19 +7,34 @@ namespace MartianChild.Utility.Grid_System
     {
         [SerializeField]
         private Grid grid;
+
+        public bool useLocalPos = true;
         public bool snapToGrid = true;
         public bool sizeToGrid = true;
-
+        
         // Adjust size and gridPosition
         private void Update()
         {
-            if (!transform.hasChanged) return;
+            Snap();
+        }
 
+        public void Snap()
+        {
             if (snapToGrid)
             {
-                Vector3 position = transform.position;
-                position.Snap(grid.CellSize);
-                transform.position = position;
+                if (useLocalPos)
+                {
+                    Vector3 position = transform.localPosition;
+                    position.Snap(grid.CellSize);
+                    transform.localPosition = position;
+                }
+                else
+                {
+                    Vector3 position = transform.position;
+                    position.Snap(grid.CellSize);
+                    transform.position = position;
+                }
+                
             }
 
             if (sizeToGrid)

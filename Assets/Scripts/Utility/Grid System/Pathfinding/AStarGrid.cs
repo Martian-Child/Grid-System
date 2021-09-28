@@ -55,7 +55,7 @@ namespace MartianChild.Utility.Grid_System.Pathfinding
             if (pathNode == null) return;
 
             Vector3 rayOrigin = WorldPosFromGridPos(gridObject.GetGridPosition()) + new Vector3(0, transform.localScale.y, 0);
-            bool hit = Raycaster.ShootRay(rayOrigin, Vector3.down, rayOrigin.y * 2, out RaycastHit raycastHit);
+            bool hit = Raycaster.ShootRay(rayOrigin, transform.forward, rayOrigin.y * 2, out RaycastHit raycastHit);
             
             switch (hit)
             {

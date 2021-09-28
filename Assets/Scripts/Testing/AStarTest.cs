@@ -1,42 +1,38 @@
-/*
-using System;
-using System.Collections.Generic;
-using System.Diagnostics;
-using MartianChild.GridSystem.Pathfinder;
-using MartianChild.Utility;
+using MartianChild.Utility.Grid_System;
+using MartianChild.Utility.Grid_System.Pathfinding;
 using UnityEngine;
-using Debug = UnityEngine.Debug;
 
-public class AStarTest : MonoBehaviour
+namespace MartianChild.VoxelDungeon.Testing
 {
-    private AStarPathfinder _pathfinder;
-    private Raycaster _raycaster = new Raycaster();
-    public GridManager grid;
-    private List<PathNode> path;
-
-    private void Start()
+    [ExecuteInEditMode] public class AStarTest : MonoBehaviour
     {
-        _pathfinder = new AStarPathfinder(grid.GetGrid());
-    }
+        public Camera cam;
+        public PathManager pathManager;
 
-    // Update is called once per frame
-    void Update()
-    {
-        if (Input.GetMouseButtonDown(0))
+
+        private void Update()
         {
-            Debug.Log("TESTING");
-            path = _pathfinder.FindPath(Vector3.zero, new Vector3(2, 3, 4));
-            Debug.Log("Mouse Click Pos: " + new Vector3(2, 3, 4));
-            Debug.Log("Path Count: " + path.Count);
-            if (path != null)
+            if (!Input.GetMouseButtonDown(0)) return;
+            
+            Plane plane = new Plane(Vector3.up, 0);
+
+            Ray ray = cam.ScreenPointToRay(Input.mousePosition);
+                
+            if (plane.Raycast(ray, out float distance))
             {
-                Debug.Log("Drawing Path");
-                for(int node = 0; node < path.Count; node++)
-                {
-                    Debug.DrawLine(path[node].gridPosition, path[node + 1].gridPosition);
-                }
+                Vector3 worldClickPosition = ray.GetPoint(distance);
+                Debug.Log("TESTING");
+                Debug.Log("Mouse Click Pos: " + worldClickPosition);
+                PathNode.Type[] traversableNodeTypes = {
+                    PathNode.Type.Air, PathNode.Type.Water, PathNode.Type.Land
+                };
+                 
+                pathManager.FindPath(
+                    gameObject, 
+                    Vector3.zero, 
+                    worldClickPosition, 
+                    traversableNodeTypes);
             }
         }
     }
 }
-*/

@@ -10,6 +10,7 @@ namespace MartianChild.Utility.Time
         /// How much time is remaining on a timer.
         /// </summary>
         public float timeRemaining { get; private set; }
+
         /// <summary>
         /// Whether or not a timer is running.
         /// </summary>

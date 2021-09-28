@@ -1,18 +1,20 @@
+using System;
 using System.Collections.Generic;
 using MyBox;
+using UnityEditor;
 using UnityEngine;
 
 
 namespace MartianChild.Utility.Grid_System.Pathfinding
 {
 #if UNITY_EDITOR
-    [ExecuteInEditMode] public class PathVisualizer : MonoBehaviour
+    [ExecuteInEditMode] public class AStarVisualizer : MonoBehaviour
     {
 
         [Header("Dependencies")] 
         [SerializeField] 
         private PathManager pathManager;
-
+        
         [Header("Visualization")] public bool drawNodes;
         public Color nodeAirColor = Color.cyan;
         public Color nodeWaterColor = Color.blue;
@@ -23,6 +25,13 @@ namespace MartianChild.Utility.Grid_System.Pathfinding
         public bool drawPath;
         public Color pathColor = Color.green;
 
+        private List<Vector3> _path;
+
+        public void DrawPath(GameObject pathRequester, List<Vector3> path)
+        {
+            if (!drawPath || pathManager.GetAStarGrid().GetGridObjects().Length == 0 || path.IsNullOrEmpty()) return;
+            _path = path;
+        }
         
         private void OnDrawGizmos()
         {
@@ -33,6 +42,7 @@ namespace MartianChild.Utility.Grid_System.Pathfinding
         {
             DrawNodes();
             DrawNodeConnections();
+            DrawPath();
         }
 
         private void OnValidate()
@@ -63,15 +73,14 @@ namespace MartianChild.Utility.Grid_System.Pathfinding
             }
         }
 
-        public void DrawPath(List<Vector3> path)
+        private void DrawPath()
         {
-            if (!drawPath || pathManager.GetAStarGrid().GetGridObjects().Length == 0 || path.IsNullOrEmpty()) return;
-
-            for (int p = 0; p < path.Count; p++)
+            if (_path.IsNullOrEmpty()) return;
+            for (int p = 0; p < _path.Count; p++)
             {
                 Gizmos.color = pathColor;
-                if (p != path.Count - 1) Gizmos.DrawLine(path[p], path[p+1]);
-                Gizmos.DrawSphere(path[p], 0.15f);
+                if (p != _path.Count - 1) Gizmos.DrawLine(_path[p], _path[p+1]);
+                Gizmos.DrawSphere(_path[p], 0.15f);
             }
         }
 
